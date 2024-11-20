@@ -1,0 +1,53 @@
+easy-stay-frontend/
+├── public/ # Arquivos públicos, como favicon e index.html
+│ ├── favicon.ico
+│ └── index.html
+├── src/ # Código-fonte principal
+│ ├── assets/ # Arquivos estáticos (imagens, ícones, fontes, etc.)
+│ │ ├── images/
+│ │ ├── icons/
+│ │ └── styles/ # CSS global ou Tailwind CSS adicional
+│ │ └── tailwind.css
+│ ├── components/ # Componentes organizados por Atomic Design
+│ │ ├── atoms/ # Elementos básicos e indivisíveis (botões, inputs)
+│ │ │ ├── Button.vue
+│ │ │ ├── Input.vue
+│ │ │ └── Icon.vue
+│ │ ├── molecules/ # Combinação de átomos (cards, modais, etc.)
+│ │ │ ├── Card.vue
+│ │ │ ├── Modal.vue
+│ │ │ └── RoomPreview.vue
+│ │ ├── organisms/ # Combinação de moléculas (header, form de login)
+│ │ │ ├── Header.vue
+│ │ │ ├── LoginForm.vue
+│ │ │ └── RoomList.vue
+│ │ ├── templates/ # Layouts de página combinando organismos
+│ │ │ ├── MainLayout.vue
+│ │ │ └── AuthLayout.vue
+│ │ └── pages/ # Páginas completas
+│ │ ├── HomePage.vue
+│ │ ├── ListingPage.vue
+│ │ ├── LoginPage.vue
+│ │ ├── RegisterPage.vue
+│ │ └── ProfilePage.vue
+│ ├── composables/ # Composables (hooks) Vue 3
+│ │ ├── useAuth.ts # Gerenciamento de autenticação
+│ │ ├── useApi.ts # Composable para comunicação com API
+│ │ └── useFilters.ts # Composable para filtros e pesquisa
+│ ├── router/ # Configurações de rotas Vue Router
+│ │ └── index.ts
+│ ├── store/ # Gerenciamento de estado (Pinia ou Vuex)
+│ │ └── index.ts
+│ ├── types/ # Tipos e interfaces TypeScript
+│ │ ├── User.ts
+│ │ ├── Listing.ts
+│ │ └── ApiResponse.ts
+│ ├── utils/ # Funções utilitárias (helpers)
+│ │ ├── formatDate.ts
+│ │ └── validateInput.ts
+│ ├── App.vue # Componente raiz
+│ ├── main.ts # Arquivo de entrada principal
+│ └── tailwind.config.js # Configuração do Tailwind CSS
+├── package.json # Dependências do projeto
+├── tsconfig.json # Configuração do TypeScript
+└── vite.config.ts # Configuração do Vite
